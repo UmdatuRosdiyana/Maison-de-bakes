@@ -1,41 +1,144 @@
-<section id="why-us" class="why-us section">
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Maison de bakes</title>
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Mengatasi preloader yang sering bikin layar hitam */
+    #preloader { display: none !important; }
+    
+    /* Style tambahan untuk tombol WA agar cantik */
+    .btn-wa-menu {
+      color: #ce1212;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 5px;
+    }
+    .btn-wa-menu:hover { color: #ff0000; }
+    
+    /* Memastikan gambar background event muncul */
+    .events .slider-bg {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1>Maison de bakes</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#why-us">Best Seller</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <a class="btn-getstarted" href="https://wa.me/6289677414850">Order via WA</a>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section light-background">
+      <div class="container">
+        <div class="row gy-4 justify-content-center justify-content-lg-between align-items-center">
+          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2 data-aos="fade-up">Welcome to Maison de bakes</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Freshly Baked, Just For You!</p>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="#menu" class="btn-get-started">Our Menu</a>
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src="assets/img/hero-bg.jpg" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/about.jpg" class="img-fluid about-img" alt="">
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>Di tengah hiruk-pikuk dunia yang terus bergerak, lahirlah Maison de bakes dengan satu mimpi sederhana</h3>
+            <p class="fst-italic">
+              menghadirkan kehangatan melalui setiap kreasi kami. Dimulai dari kegemaran dan cinta terhadap seni pembuatan kue, perjalanan ini dibangun dengan ketekunan, kesabaran, dan dedikasi untuk menyajikan yang terbaik bagi setiap pelanggan.
+            </p>
+            <p>
+              Kami tidak hanya membuat kue, kami menenun kebahagiaan dalam setiap lapisan, mengajak Anda merayakan momen-momen berharga dengan elegan dan penuh perasaan. Maison de bakes, hadir untuk menyemarakkan hari Anda dengan kehangatan yang tak terlupakan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us" class="why-us section">
       <div class="container section-title" data-aos="fade-up">
         <h2>Product</h2>
         <p>Best Seller</p>
       </div>
-
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item text-center">
-              <img src="assets/img/cake2.jpeg" class="img-fluid mb-3" alt="Cake Roll" style="border-radius: 15px;">
+            <div class="card-item">
+              <img src="assets/img/cake2.jpeg" class="img-fluid" alt="">
               <h4>Cake Roll</h4>
               <p>Kue gulung lembut dengan lapisan krim creamy yang manis, dengan pilihan berbagai menu cocok untuk dinikmati di segala suasana.</p>
-              <a href="https://wa.me/6289677414850?text=Halo%20Maison%20de%20bakes,%20saya%20mau%20order%20Cake%20Roll" class="btn-order-wa" style="background: #ce1212; color: white; padding: 10px 20px; border-radius: 50px; text-decoration: none; display: inline-block;">
-                <i class="bi bi-whatsapp"></i> Pesan via WA
-              </a>
+              <a href="https://wa.me/6289677414850?text=Halo%20Admin,%20saya%20mau%20order%20Cake%20Roll" class="btn btn-danger mt-3" style="border-radius: 30px; background: #ce1212;">Pesan via WA</a>
             </div>
           </div>
-
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item text-center">
-              <img src="assets/img/p3.jpg" class="img-fluid mb-3" alt="Chocolate Muffin" style="border-radius: 15px;">
+            <div class="card-item">
+              <img src="assets/img/p3.jpg" class="img-fluid" alt="">
               <h4>Chocolate Muffin</h4>
-              <p>Muffin lembut dengan rasa cokelat pekat dan taburan choco chip di atasnya.</p>
-              <a href="https://wa.me/6289677414850?text=Halo%20Maison%20de%20bakes,%20saya%20mau%20order%20Chocolate%20Muffin" class="btn-order-wa" style="background: #ce1212; color: white; padding: 10px 20px; border-radius: 50px; text-decoration: none; display: inline-block;">
-                <i class="bi bi-whatsapp"></i> Pesan via WA
-              </a>
+              <p>Muffin lembut dengan rasa cokelat pekat dan taburan choco chip di atasnya</p>
+              <a href="https://wa.me/6289677414850?text=Halo%20Admin,%20saya%20mau%20order%20Chocolate%20Muffin" class="btn btn-danger mt-3" style="border-radius: 30px; background: #ce1212;">Pesan via WA</a>
             </div>
           </div>
-
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item text-center">
-              <img src="assets/img/p7.jpg" class="img-fluid mb-3" alt="Tiramisu Slice" style="border-radius: 15px;">
+            <div class="card-item">
+              <img src="assets/img/p7.jpg" class="img-fluid" alt="">
               <h4>Tiramisu Slice</h4>
-              <p>Potongan tiramisu lembut dengan lapisan kopi dan krim mascarpone yang lezat.</p>
-              <a href="https://wa.me/6289677414850?text=Halo%20Maison%20de%20bakes,%20saya%20mau%20order%20Tiramisu%20Slice" class="btn-order-wa" style="background: #ce1212; color: white; padding: 10px 20px; border-radius: 50px; text-decoration: none; display: inline-block;">
-                <i class="bi bi-whatsapp"></i> Pesan via WA
-              </a>
+              <p>Potongan tiramisu lembut dengan lapisan kopi dan krim mascarpone yang lezat</p>
+              <a href="https://wa.me/6289677414850?text=Halo%20Admin,%20saya%20mau%20order%20Tiramisu%20Slice" class="btn btn-danger mt-3" style="border-radius: 30px; background: #ce1212;">Pesan via WA</a>
             </div>
           </div>
         </div>
@@ -47,27 +150,139 @@
         <h2>Menu</h2>
         <p>Check Our Tasty Menu</p>
       </div>
-
       <div class="container">
         <div class="row gy-5">
           <div class="col-lg-6 menu-item">
-            <img src="assets/img/menu/p1.jpg" class="menu-img img-fluid" alt="">
-            <div class="menu-content">
-              <a href="#">Croissant Mentega</a><span>Rp 15.000</span>
-            </div>
-            <div class="menu-ingredients">Croissant renyah dengan aroma mentega yang menggoda.</div>
-            <a href="https://wa.me/6289677414850?text=Order%20Croissant%20Mentega" style="color: #ce1212; font-size: 14px; font-weight: bold;"><i class="bi bi-cart"></i> Klik untuk Order</a>
+            <img src="assets/img/menu/p1.jpg" class="menu-img img-fluid">
+            <div class="menu-content"><a href="#">Croissant Mentega</a><span>Rp 15.000</span></div>
+            <div class="menu-ingredients">"Croissant renyah dengan aroma mentega yang menggoda"</div>
+            <a href="https://wa.me/6289677414850?text=Order%20Croissant%20Mentega" class="btn-wa-menu"><i class="bi bi-whatsapp"></i> Chat Admin</a>
           </div>
-
           <div class="col-lg-6 menu-item">
-            <img src="assets/img/menu/p2.jpeg" class="menu-img img-fluid" alt="">
-            <div class="menu-content">
-              <a href="#">Cheese Bun</a><span>Rp 20.000</span>
-            </div>
-            <div class="menu-ingredients">Roti lembut dengan isi keju meleleh di dalam, disukai semua kalangan.</div>
-            <a href="https://wa.me/6289677414850?text=Order%20Cheese%20Bun" style="color: #ce1212; font-size: 14px; font-weight: bold;"><i class="bi bi-cart"></i> Klik untuk Order</a>
+            <img src="assets/img/menu/p2.jpeg" class="menu-img img-fluid">
+            <div class="menu-content"><a href="#">Cheese Bun</a><span>Rp 20.000</span></div>
+            <div class="menu-ingredients">Roti lembut dengan isi keju meleleh di dalam, disukai semua kalangan</div>
+            <a href="https://wa.me/6289677414850?text=Order%20Cheese%20Bun" class="btn-wa-menu"><i class="bi bi-whatsapp"></i> Chat Admin</a>
           </div>
-
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/p4.jpg" class="menu-img img-fluid">
+            <div class="menu-content"><a href="#">Cinnamon Roll</a><span>Rp 15.000</span></div>
+            <div class="menu-ingredients">Roti gulung lembut & renyah</div>
+            <a href="https://wa.me/6289677414850?text=Order%20Cinnamon%20Roll" class="btn-wa-menu"><i class="bi bi-whatsapp"></i> Chat Admin</a>
+          </div>
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/p6.jpg" class="menu-img img-fluid">
+            <div class="menu-content"><a href="#">Red Velvet Slice</a><span>Rp 22.000</span></div>
+            <div class="menu-ingredients">Kue merah lembut dengan lapisan krim keju manis</div>
+            <a href="https://wa.me/6289677414850?text=Order%20Red%20Velvet" class="btn-wa-menu"><i class="bi bi-whatsapp"></i> Chat Admin</a>
+          </div>
           </div>
       </div>
     </section>
+
+    <section id="events" class="events section">
+      <img class="slider-bg" src="assets/img/events-bg.jpg" alt="" data-aos="fade-in">
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="swiper init-swiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="row gy-4 event-item">
+                <div class="col-lg-6 pt-4 pt-lg-0 content text-white">
+                  <h3>Event Khusus Pelanggan</h3>
+                  <ul>
+                    <li><i class="bi bi-check2-circle"></i> <span>Diskon atau free cake mini saat ulang tahun pelanggan</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Hubungi Kami</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="info-item d-flex">
+              <i class="bi bi-clock flex-shrink-0"></i>
+              <div><h3>Jam Buka</h3><p>Senin- Minggu: 08:00 - 10:00</p></div>
+            </div>
+            <div class="info-item d-flex mt-4">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div><h3>Call</h3><p>+6289677414850</p></div>
+            </div>
+            <div class="info-item d-flex mt-4">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div><h3>Email</h3><p>rosdiyanadiyana16@gmail.com</p></div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+             <div style="background: #f8f8f8; padding: 30px; border-radius: 10px; text-align: center;">
+                <h3>Siap Untuk Memesan?</h3>
+                <p>Klik tombol di bawah untuk langsung terhubung dengan WhatsApp kami dan melakukan pemesanan.</p>
+                <a href="https://wa.me/6289677414850" class="btn btn-danger btn-lg py-3 px-5 mt-3" style="background: #ce1212; border-radius: 50px;">ORDER VIA WHATSAPP</a>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>What they're saying about us</p>
+      </div>
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <div class="testimonial-item">
+              <p><i class="bi bi-quote quote-icon-left"></i><span>Tempat roti favorit! Rasanya enak dan pelayanan cepat.</span><i class="bi bi-quote quote-icon-right"></i></p>
+              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+              <h3>Brian</h3>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item">
+              <p><i class="bi bi-quote quote-icon-left"></i><span>Pelayanan luar biasa! Staf ramah dan pengiriman tepat waktu.</span><i class="bi bi-quote quote-icon-right"></i></p>
+              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+              <h3>Alhura</h3>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item">
+              <p><i class="bi bi-quote quote-icon-left"></i><span>Setiap kue yang saya pesan terlihat begitu cantik dan Instagramable!</span><i class="bi bi-quote quote-icon-right"></i></p>
+              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+              <h3>Adisti</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="container text-center">
+      <p>© <span>Maison </span> <strong class="px-1 sitename">de bakes</strong> <span>_UR</span></p>
+      <div class="social-links d-flex justify-content-center mt-3">
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+</html>
