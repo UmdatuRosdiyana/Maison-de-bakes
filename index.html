@@ -1,216 +1,188 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Maison de Bakes | Fresh Bakery & Pastry</title>
+  <title>Maison de Bakes | Final</title>
 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
-    /* FIX LAYAR HITAM: Mematikan preloader agar tidak macet di GitHub */
-    #preloader {
-      display: none !important;
-      visibility: hidden !important;
+    #preloader { display: none !important; }
+    body { overflow-x: hidden !important; }
+    .section-title { padding-bottom: 40px; text-align: center; margin-top: 30px; }
+    .testi-card { 
+      background: #fff; 
+      padding: 30px; 
+      border-radius: 15px; 
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      height: 100%;
+      border-bottom: 4px solid #ce1212;
     }
-    body {
-      overflow: auto !important;
+    .testi-card h3 { color: #ce1212; font-size: 1.2rem; margin-bottom: 5px; }
+    .testi-card h4 { color: #6c757d; font-size: 0.9rem; margin-bottom: 15px; }
+    .event-card {
+      background: #fff; padding: 25px; border-radius: 10px; border-left: 5px solid #ce1212;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05); height: 100%;
     }
-    /* Agar gambar hero tidak redup */
-    .hero img {
-      filter: brightness(0.8);
+    .wa-float {
+      position: fixed; bottom: 20px; right: 20px;
+      background: #25d366; color: #fff; border-radius: 50px;
+      padding: 12px 20px; z-index: 999; font-weight: bold; text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
+    .img-menu { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; }
+    .stars i { color: #ffc107; font-size: 14px; }
   </style>
 </head>
 
-<body class="index-page">
+<body>
+  <a href="https://wa.me/6289677414850" class="wa-float" target="_blank"><i class="bi bi-whatsapp"></i> Chat Admin</a>
 
   <header id="header" class="header fixed-top d-flex align-items-center">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <h1 class="sitename">Maison de bakes</h1>
-      </a>
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo"><h1>Maison de bakes</h1></a>
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#events">Events</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <a class="btn-book-a-table d-none d-xl-block" href="https://wa.me/6289677414850">ORDER VIA WA</a>
+      <a class="btn-book-a-table" href="https://wa.me/6289677414850">ORDER WA</a>
     </div>
   </header>
 
-  <main class="main">
-
+  <main class="main pt-5">
     <section id="hero" class="hero section dark-background">
       <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <div class="container text-center">
+        <h2>Welcome to Maison de bakes</h2>
+        <p>Freshly Baked, Just For You!</p>
+      </div>
+    </section>
+
+    <section id="about" class="about section p-5">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10">
-            <h2 data-aos="fade-up" data-aos-delay="100">Welcome to Maison de bakes</h2>
-            <p data-aos="fade-up" data-aos-delay="200">Freshly Baked, Just For You!</p>
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-6"><img src="assets/img/about.jpg" class="img-fluid rounded shadow" alt=""></div>
+          <div class="col-lg-6">
+            <h3>Kisah Maison de bakes</h3>
+            <p class="fst-italic">Di tengah hiruk-pikuk dunia yang terus bergerak, lahirlah Maison de bakes dengan satu mimpi sederhana: menghadirkan kehangatan melalui setiap kreasi roti kami.</p>
+            <p>Berawal dari dapur rumah yang dipenuhi aroma mentega dan ragi, kami percaya bahwa roti bukan sekadar makanan, melainkan cerita yang dibagikan di atas meja makan.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="about section">
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <section id="menu" class="menu section p-5 bg-light">
+      <div class="container">
+        <div class="section-title"><h2>Menu</h2><p>Pilihan Favorit Pelanggan</p></div>
         <div class="row gy-4">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/about.jpg" class="img-fluid about-img" alt="">
+          <div class="col-lg-4 text-center">
+            <img src="assets/img/cake2.jpeg" class="img-menu mb-3 shadow-sm">
+            <h4>Cake Roll</h4><p class="fw-bold">Rp 45.000</p>
+            <a href="https://wa.me/6289677414850?text=Halo,%20saya%20mau%20order%20Cake%20Roll" class="btn btn-danger btn-sm px-4">Order WA</a>
           </div>
-          <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>Di tengah hiruk-pikuk dunia yang terus bergerak, lahirlah Maison de bakes dengan satu mimpi sederhana</h3>
-            <p class="fst-italic">
-              menghadirkan kehangatan melalui setiap kreasi kami. Dimulai dari kegemaran dan cinta terhadap seni pembuatan kue, perjalanan ini dibangun dengan ketekunan, kesabaran, dan dedikasi untuk menyajikan yang terbaik bagi setiap pelanggan. Setiap rasa, setiap detail, setiap sentuhan dihasilkan dengan ketelitian dan kasih. Karena bagi kami, kue bukan sekadar makanan melainkan pengalaman, kenangan, dan cerita yang ingin kami bagikan. Dari dapur kecil kami hingga ke tangan Anda, kami percaya bahwa keindahan sejati lahir dari cinta, kualitas, dan keikhlasan.
-            </p>
-            <p>
-              Kami tidak hanya membuat kue, kami menenun kebahagiaan dalam setiap lapisan, mengajak Anda merayakan momen-momen berharga dengan elegan dan penuh perasaan. Maison de bakes, hadir untuk menyemarakkan hari Anda dengan kehangatan yang tak terlupakan.
-            </p>
+          <div class="col-lg-4 text-center">
+            <img src="assets/img/p3.jpg" class="img-menu mb-3 shadow-sm">
+            <h4>Chocolate Muffin</h4><p class="fw-bold">Rp 15.000</p>
+            <a href="https://wa.me/6289677414850?text=Halo,%20saya%20mau%20order%20Chocolate%20Muffin" class="btn btn-danger btn-sm px-4">Order WA</a>
+          </div>
+          <div class="col-lg-4 text-center">
+            <img src="assets/img/p7.jpg" class="img-menu mb-3 shadow-sm">
+            <h4>Tiramisu Slice</h4><p class="fw-bold">Rp 25.000</p>
+            <a href="https://wa.me/6289677414850?text=Halo,%20saya%20mau%20order%20Tiramisu%20Slice" class="btn btn-danger btn-sm px-4">Order WA</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="why-us" class="why-us section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Product</h2>
-        <p>Best Seller</p>
-      </div>
+    <section id="events" class="events section p-5">
       <div class="container">
+        <div class="section-title"><h2>Events</h2><p>Momen Spesial Bersama Kami</p></div>
         <div class="row gy-4">
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <img src="assets/img/cake2.jpeg" class="img-fluid" alt="">
-              <h4><a href="#" class="stretched-link">Cake Roll</a></h4>
-              <p>Kue gulung lembut dengan lapisan krim creamy yang manis, dengan pilihan berbagai menu cocok untuk dinikmati di segala suasana.</p>
+          <div class="col-lg-6">
+            <div class="event-card">
+              <h4>Event Khusus Pelanggan</h4>
+              <p>Nikmati diskon spesial atau free cake mini khusus bagi pelanggan yang sedang berulang tahun!</p>
             </div>
           </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <img src="assets/img/p3.jpg" class="img-fluid" alt="">
-              <h4><a href="#" class="stretched-link">Chocolate Muffin</a></h4>
-              <p>Muffin lembut dengan rasa cokelat pekat dan taburan choco chip di atasnya</p>
-            </div>
-          </div>
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <img src="assets/img/p7.jpg" class="img-fluid" alt="">
-              <h4><a href="#" class="stretched-link">Tiramisu Slice</a></h4>
-              <p>Potongan tiramisu lembut dengan lapisan kopi dan krim mascarpone yang lezat</p>
+          <div class="col-lg-6">
+            <div class="event-card">
+              <h4>Event Musiman</h4>
+              <p>Hampers spesial Idul Fitri, Promo Valentine, dan Tart dekoratif edisi Natal.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="menu" class="menu section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Menu</h2>
-        <p>Check Our Tasty Menu</p>
-      </div>
+    <section id="testimonials" class="testimonials section p-5 bg-light">
       <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-6 menu-item">
-            <img src="assets/img/menu/p1.jpg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Croissant Mentega</a><span>Rp 15.000</span>
-            </div>
-            <div class="menu-ingredients">Croissant renyah dengan aroma mentega yang menggoda</div>
-          </div>
-          <div class="col-lg-6 menu-item">
-            <img src="assets/img/menu/p2.jpeg" class="menu-img" alt="">
-            <div class="menu-content">
-              <a href="#">Cheese Bun</a><span>Rp 20.000</span>
-            </div>
-            <div class="menu-ingredients">Roti lembut dengan isi keju meleleh di dalam</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="events" class="events section">
-      <img class="slider-bg" src="assets/img/events-bg.jpg" alt="">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Events</h2>
-          <p>Momen Spesial di Maison de bakes</p>
-        </div>
-        <div class="row">
-           <div class="col-lg-6">
-              <h3>Event Khusus Pelanggan</h3>
-              <p>Diskon atau free cake mini saat ulang tahun pelanggan.</p>
-           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Hubungi Kami</p>
-      </div>
-      <div class="container">
+        <div class="section-title"><h2>Testimonials</h2><p>Apa Kata Mereka Tentang Kami</p></div>
         <div class="row gy-4">
           <div class="col-lg-4">
-            <div class="info-item d-flex">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Alamat</h3>
-                <p>Perum Bakery Impian No. 99, Tangerang</p>
-              </div>
+            <div class="testi-card">
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <p>"Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus."</p>
+              <h3>Saul Goodman</h3>
+              <h4>Ceo &amp; Founder</h4>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="info-item d-flex">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Hubungi Kami</h3>
-                <p>+6289677414850</p>
-              </div>
+            <div class="testi-card">
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <p>"Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum."</p>
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="info-item d-flex">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email</h3>
-                <p>rosdiyanadiyana16@gmail.com</p>
-              </div>
+            <div class="testi-card">
+              <div class="stars"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+              <p>"Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam."</p>
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <section id="contact" class="contact section p-5 text-center">
+      <div class="container">
+        <div class="section-title"><h2>Contact</h2><p>Hubungi Kami</p></div>
+        <div class="row gy-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="p-3 shadow-sm bg-white rounded">
+              <i class="bi bi-geo-alt color-primary fs-2"></i>
+              <h5>Lokasi</h5><p>Tangerang, Indonesia</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-3 shadow-sm bg-white rounded">
+              <i class="bi bi-envelope fs-2"></i>
+              <h5>Email</h5><p>rosdiyanadiyana16@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer id="footer" class="footer dark-background">
-    <div class="container">
-      <div class="copyright text-center">
-        <p>© <span>Maison </span> <strong class="px-1 sitename">de bakes</strong> <span>_UR</span></p>
-      </div>
-    </div>
+  <footer class="p-4 text-center border-top bg-white">
+    <p>© <strong>Maison de bakes</strong> _UR. All Rights Reserved</p>
   </footer>
-
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
+  <script>AOS.init();</script>
 </body>
 </html>
