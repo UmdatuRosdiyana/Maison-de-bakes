@@ -1,185 +1,187 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Maison de Bakes | Full Menu</title>
+  <title>Maison de bakes</title>
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
   <link href="assets/css/main.css" rel="stylesheet">
 
   <style>
+    /* Solusi Layar Hitam & Slider Error */
     #preloader { display: none !important; }
-    body { overflow-x: hidden !important; }
-    .section-title { padding-bottom: 40px; text-align: center; margin-top: 30px; }
-    .img-menu { width: 100%; height: 220px; object-fit: cover; border-radius: 10px; transition: 0.3s; }
-    .img-menu:hover { transform: scale(1.05); }
-    .menu-card { 
-      background: #fff; padding: 15px; border-radius: 15px; 
-      box-shadow: 0 5px 15px rgba(0,0,0,0.05); height: 100%; text-align: center;
-    }
-    .price-tag { color: #ce1212; font-weight: bold; font-size: 1.1rem; display: block; margin: 10px 0; }
-    .btn-wa-menu { background: #25d366; color: white; border-radius: 5px; text-decoration: none; padding: 8px 15px; display: block; font-size: 0.9rem; }
-    .btn-wa-menu:hover { background: #128c7e; color: white; }
-    .testi-card { background: #fff; padding: 25px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); height: 100%; border-bottom: 4px solid #ce1212; }
-    .wa-float { position: fixed; bottom: 20px; right: 20px; background: #25d366; color: #fff; border-radius: 50px; padding: 12px 20px; z-index: 999; font-weight: bold; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .swiper-wrapper { height: auto !important; display: flex !important; flex-wrap: wrap !important; }
+    .swiper-slide { height: auto !important; margin-bottom: 30px !important; }
+    .menu-item { text-align: center; }
   </style>
 </head>
 
-<body>
-  <a href="https://wa.me/6289677414850" class="wa-float" target="_blank"><i class="bi bi-whatsapp"></i> Chat Admin</a>
+<body class="index-page">
 
-  <header id="header" class="header fixed-top d-flex align-items-center bg-white shadow-sm">
-    <div class="container d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo text-decoration-none"><h1 class="m-0" style="color:#ce1212;">Maison de bakes</h1></a>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1>Maison de bakes</h1>
+      </a>
       <nav id="navmenu" class="navmenu">
-        <ul class="d-flex list-unstyled m-0">
-          <li class="px-3"><a href="#hero" class="text-dark text-decoration-none">Home</a></li>
-          <li class="px-3"><a href="#about" class="text-dark text-decoration-none">About</a></li>
-          <li class="px-3"><a href="#menu" class="text-dark text-decoration-none">Menu</a></li>
-          <li class="px-3"><a href="#testimonials" class="text-dark text-decoration-none">Testimonial</a></li>
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      <a class="btn-getstarted" href="https://wa.me/6289677414850">Order via WA</a>
     </div>
   </header>
 
   <main class="main">
-    <section id="hero" class="hero section dark-background" style="padding: 100px 0;">
-      <img src="assets/img/hero-bg.jpg" alt="" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-1; filter: brightness(50%);">
-      <div class="container text-center text-white py-5">
-        <h2 data-aos="fade-up">Welcome to Maison de bakes</h2>
-        <p data-aos="fade-up" data-aos-delay="100">Freshly Baked, Just For You!</p>
-      </div>
-    </section>
 
-    <section id="about" class="about section p-5">
+    <section id="hero" class="hero section light-background">
       <div class="container">
-        <div class="row gy-4 align-items-center">
-          <div class="col-lg-6"><img src="assets/img/about.jpg" class="img-fluid rounded shadow" alt="About Us"></div>
-          <div class="col-lg-6">
-            <h3>Di tengah hiruk-pikuk dunia yang terus bergerak...</h3>
-            <p class="fst-italic">Lahirlah Maison de bakes dengan satu mimpi sederhana menghadirkan kehangatan melalui setiap kreasi kami. Dimulai dari kegemaran dan cinta terhadap seni pembuatan kue, perjalanan ini dibangun dengan ketekunan, kesabaran, dan dedikasi.</p>
-            <p>Setiap rasa, setiap detail, setiap sentuhan dihasilkan dengan ketelitian dan kasih. Karena bagi kami, kue bukan sekadar makanan melainkan pengalaman, kenangan, dan cerita yang ingin kami bagikan.</p>
+        <div class="row gy-4 justify-content-center justify-content-lg-between align-items-center">
+          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2 data-aos="fade-up">Welcome to Maison de bakes</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Freshly Baked, Just For You!</p>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="#menu" class="btn-get-started">Our Menu</a>
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="menu" class="menu section p-5 bg-light">
+    <section id="about" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us<br></h2>
+        <p><span>Learn More</span> <span class="description-title">About Us</span></p>
+      </div>
       <div class="container">
-        <div class="section-title"><h2>Menu</h2><p>Check Our Tasty Menu</p></div>
         <div class="row gy-4">
-          <div class="col-lg-4 col-md-6">
-            <div class="menu-card">
-              <img src="assets/img/menu/p1.jpg" class="img-menu">
-              <h4 class="mt-3">Croissant Mentega</h4>
-              <span class="price-tag">Rp 15.000</span>
-              <a href="https://wa.me/6289677414850?text=Halo,%20mau%20order%20Croissant%20Mentega" class="btn-wa-menu">Order WA</a>
-            </div>
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid mb-4" alt="">
           </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="menu-card">
-              <img src="assets/img/menu/p2.jpeg" class="img-menu">
-              <h4 class="mt-3">Cheese Bun</h4>
-              <span class="price-tag">Rp 20.000</span>
-              <a href="https://wa.me/6289677414850?text=Halo,%20mau%20order%20Cheese%20Bun" class="btn-wa-menu">Order WA</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="menu-card">
-              <img src="assets/img/menu/p4.jpg" class="img-menu">
-              <h4 class="mt-3">Cinnamon Roll</h4>
-              <span class="price-tag">Rp 15.000</span>
-              <a href="https://wa.me/6289677414850?text=Halo,%20mau%20order%20Cinnamon%20Roll" class="btn-wa-menu">Order WA</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="menu-card">
-              <img src="assets/img/menu/p6.jpg" class="img-menu">
-              <h4 class="mt-3">Red Velvet Slice</h4>
-              <span class="price-tag">Rp 22.000</span>
-              <a href="https://wa.me/6289677414850?text=Halo,%20mau%20order%20Red%20Velvet" class="btn-wa-menu">Order WA</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="menu-card">
-              <img src="assets/img/menu/p8.jpg" class="img-menu">
-              <h4 class="mt-3">Donat Glaze</h4>
-              <span class="price-tag">Rp 55.000</span>
-              <a href="https://wa.me/6289677414850?text=Halo,%20mau%20order%20Donat%20Glaze" class="btn-wa-menu">Order WA</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="menu-card">
-              <img src="assets/img/menu/cake1.jpeg" class="img-menu">
-              <h4 class="mt-3">Fudgy Brownies</h4>
-              <span class="price-tag">Rp 40.000</span>
-              <a href="https://wa.me/6289677414850?text=Halo,%20mau%20order%20Fudgy%20Brownies" class="btn-wa-menu">Order WA</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="menu-card">
-              <img src="assets/img/menu/cake3.jpeg" class="img-menu">
-              <h4 class="mt-3">Strawberry Cheese</h4>
-              <span class="price-tag">Rp 50.000</span>
-              <a href="https://wa.me/6289677414850?text=Halo,%20mau%20order%20Strawberry%20Cheese" class="btn-wa-menu">Order WA</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="menu-card">
-              <img src="assets/img/menu/p11.jpg" class="img-menu">
-              <h4 class="mt-3">Cake Pandan Suji</h4>
-              <span class="price-tag">Rp 40.000</span>
-              <a href="https://wa.me/6289677414850?text=Halo,%20mau%20order%20Pandan%20Suji" class="btn-wa-menu">Order WA</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="menu-card">
-              <img src="assets/img/menu/p10.jpeg" class="img-menu">
-              <h4 class="mt-3">Strawberry Banana</h4>
-              <span class="price-tag">Rp 38.000</span>
-              <a href="https://wa.me/6289677414850?text=Halo,%20mau%20order%20Strawberry%20Banana" class="btn-wa-menu">Order WA</a>
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Di tengah hiruk-pikuk dunia yang terus bergerak, lahirlah Maison de bakes dengan satu mimpi sederhana: menghadirkan kehangatan melalui setiap kreasi kami.
+              </p>
+              <p>
+                Dimulai dari kegemaran dan cinta terhadap seni pembuatan kue, perjalanan ini dibangun dengan ketekunan, kesabaran, dan dedikasi. Maison de bakes hadir untuk menyemarakkan hari Anda dengan kehangatan yang tak terlupakan.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="testimonials" class="testimonials section p-5">
+    <section id="menu" class="menu section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Menu</h2>
+        <p><span>Check Our</span> <span class="description-title">Yummy Menu</span></p>
+      </div>
       <div class="container">
-        <div class="section-title"><h2>Testimonials</h2><p>What they're saying</p></div>
+        <div class="row gy-5">
+          <div class="col-lg-4 menu-item">
+            <a href="assets/img/menu/p1.jpg" class="glightbox"><img src="assets/img/menu/p1.jpg" class="menu-img img-fluid"></a>
+            <h4>Croissant Mentega</h4>
+            <p class="price">Rp 15.000</p>
+          </div>
+          <div class="col-lg-4 menu-item">
+            <a href="assets/img/menu/p2.jpeg" class="glightbox"><img src="assets/img/menu/p2.jpeg" class="menu-img img-fluid"></a>
+            <h4>Cheese Bun</h4>
+            <p class="price">Rp 20.000</p>
+          </div>
+          <div class="col-lg-4 menu-item">
+            <a href="assets/img/menu/p4.jpg" class="glightbox"><img src="assets/img/menu/p4.jpg" class="menu-img img-fluid"></a>
+            <h4>Cinnamon Roll</h4>
+            <p class="price">Rp 15.000</p>
+          </div>
+          <div class="col-lg-4 menu-item">
+            <a href="assets/img/menu/p6.jpg" class="glightbox"><img src="assets/img/menu/p6.jpg" class="menu-img img-fluid"></a>
+            <h4>Red Velvet</h4>
+            <p class="price">Rp 22.000</p>
+          </div>
+          <div class="col-lg-4 menu-item">
+            <a href="assets/img/menu/p8.jpg" class="glightbox"><img src="assets/img/menu/p8.jpg" class="menu-img img-fluid"></a>
+            <h4>Donat Glaze</h4>
+            <p class="price">Rp 55.000</p>
+          </div>
+          <div class="col-lg-4 menu-item">
+            <a href="assets/img/menu/cake1.jpeg" class="glightbox"><img src="assets/img/menu/cake1.jpeg" class="menu-img img-fluid"></a>
+            <h4>Fudgy Brownies</h4>
+            <p class="price">Rp 40.000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials section light-background">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p><span>What They Are</span> <span class="description-title">Saying About Us</span></p>
+      </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
           <div class="col-lg-4">
-            <div class="testi-card">
-              <h3>Saul Goodman</h3><h4>Ceo & Founder</h4>
-              <p>"Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus."</p>
+            <div class="testimonial-item">
+              <p><i class="bi bi-quote quote-icon-left"></i><span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus.</span><i class="bi bi-quote quote-icon-right"></i></p>
+              <h3>Saul Goodman</h3>
+              <h4>Ceo &amp; Founder</h4>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="testi-card">
-              <h3>Sara Wilsson</h3><h4>Designer</h4>
-              <p>"Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum."</p>
+            <div class="testimonial-item">
+              <p><i class="bi bi-quote quote-icon-left"></i><span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum.</span><i class="bi bi-quote quote-icon-right"></i></p>
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="testi-card">
-              <h3>Jena Karlis</h3><h4>Store Owner</h4>
-              <p>"Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam."</p>
+            <div class="testimonial-item">
+              <p><i class="bi bi-quote quote-icon-left"></i><span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam.</span><i class="bi bi-quote quote-icon-right"></i></p>
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
             </div>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="p-4 text-center border-top">
-    <p>© <strong>Maison de bakes</strong> _UR. 2024</p>
+  <footer id="footer" class="footer dark-background">
+    <div class="container text-center">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Maison de bakes</strong> <span>All Rights Reserved</span></p>
+    </div>
   </footer>
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script>AOS.init();</script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
 </body>
 </html>
