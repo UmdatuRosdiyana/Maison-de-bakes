@@ -4,111 +4,68 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Maison de Bakes | Fresh Bakery & Pastry Premium Tangerang</title>
-  
-  <meta name="description" content="Maison de Bakes menyediakan roti, cake roll, dan pastry premium yang dibuat segar setiap hari di Tangerang. Kelezatan autentik dengan bahan berkualitas.">
-  <meta name="keywords" content="roti, kue, bakery Tangerang, pastry, Maison de Bakes, cake roll, chocolate muffin, dessert premium">
-  <meta name="author" content="Maison de Bakes">
-  <meta name="robots" content="index, follow">
-
-  <style>
-    #preloader {
-      display: none !important;
-      visibility: hidden !important;
-      opacity: 0 !important;
-    }
-    body {
-      overflow: visible !important;
-      background-color: white !important;
-      color: #222 !important;
-    }
-  </style>
+  <title>Maison de Bakes | Fresh Bakery & Pastry Premium</title>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Bakery",
-    "@id": "https://umdaturosdiyana.github.io/maison-de-bakes/",
     "name": "Maison de Bakes",
-    "image": "https://umdaturosdiyana.github.io/maison-de-bakes/assets/img/hero-bg.jpg",
-    "description": "Maison de Bakes menyediakan roti dan kue premium yang dibuat segar setiap hari.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Perum Bakery Impian No. 99",
-      "addressLocality": "Tangerang",
-      "addressRegion": "Banten",
-      "postalCode": "15000",
-      "addressCountry": "ID"
-    },
     "url": "https://umdaturosdiyana.github.io/maison-de-bakes/",
-    "telephone": "+6289677414850",
-    "openingHours": "Mo-Su 08:00-22:00"
+    "image": "https://umdaturosdiyana.github.io/maison-de-bakes/assets/img/hero-bg.jpg"
   }
   </script>
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SP4K3KFLDB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-SP4K3KFLDB');
-  </script>
+  <style>
+    #preloader, .preloader {
+      display: none !important;
+      visibility: hidden !important;
+    }
+    html, body {
+      overflow: auto !important; /* Memaksa scroll aktif kembali */
+      height: auto !important;
+      position: relative !important;
+    }
+  </style>
 
   <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
   <link href="./assets/css/main.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header fixed-top">
-    <div class="branding d-flex align-items-center">
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <h1 class="sitename">Maison de bakes</h1>
-        </a>
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-        <a class="btn-book-a-table d-none d-xl-block" href="https://wa.me/6289677414850">Order via WA</a>
-      </div>
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <h1 class="sitename">Maison de bakes</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <a class="btn-book-a-table" href="https://wa.me/6289677414850">ORDER VIA WA</a>
     </div>
   </header>
 
   <main class="main">
-    <section id="hero" class="hero section dark-background">
-      <img src="./assets/img/hero-bg.jpg" alt="Bakery Hero" data-aos="fade-in">
+    <section id="hero" class="hero section dark-background" style="min-height: 100vh; display: flex; align-items: center;">
+      <img src="./assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
       <div class="container text-center">
         <h2 data-aos="fade-up">Welcome to <span>Maison de bakes</span></h2>
         <p data-aos="fade-up" data-aos-delay="100">Freshly Baked, Just For You!</p>
-        <div class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="200">
-          <a href="#menu" class="cta-btn">Our Menu</a>
-        </div>
       </div>
     </section>
 
-    <section id="about" class="about section">
-      <div class="container" data-aos="fade-up">
-        <div class="row gy-4">
-          <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>Kisah Maison de bakes</h3>
-            <p class="fst-italic">Menghadirkan kehangatan melalui setiap kreasi kami. Dimulai dari cinta terhadap seni pembuatan kue.</p>
-            <p>Setiap rasa dihasilkan dengan ketelitian dan kasih, karena bagi kami, kue adalah pengalaman dan kenangan manis bagi Anda dan keluarga.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+    </main>
 
   <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/vendor/aos/aos.js"></script>
