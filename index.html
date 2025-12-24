@@ -4,7 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Maison de Bakes | Fresh Bakery & Pastry Premium</title>
+  <title>Maison de Bakes | Fresh Bakery & Pastry Premium Tangerang</title>
+  
+  <meta name="description" content="Maison de Bakes menyediakan roti, cake roll, dan pastry premium segar di Tangerang. Kelezatan autentik dengan bahan berkualitas tinggi.">
+  <meta name="keywords" content="roti, kue, bakery Tangerang, pastry, Maison de Bakes, cake roll, dessert premium">
+  <meta name="author" content="Maison de Bakes">
+  <meta name="robots" content="index, follow">
 
   <script type="application/ld+json">
   {
@@ -12,21 +17,39 @@
     "@type": "Bakery",
     "name": "Maison de Bakes",
     "url": "https://umdaturosdiyana.github.io/maison-de-bakes/",
-    "image": "https://umdaturosdiyana.github.io/maison-de-bakes/assets/img/hero-bg.jpg"
+    "image": "https://umdaturosdiyana.github.io/maison-de-bakes/assets/img/hero-bg.jpg",
+    "telephone": "+6289677414850",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Tangerang",
+      "addressCountry": "ID"
+    }
   }
   </script>
 
   <style>
-    #preloader, .preloader {
+    /* Menghilangkan layar hitam loading yang macet */
+    #preloader, .preloader, .loading-screen {
       display: none !important;
       visibility: hidden !important;
+      opacity: 0 !important;
     }
+    /* Memaksa scroll bisa ditarik ke bawah */
     html, body {
-      overflow: auto !important; /* Memaksa scroll aktif kembali */
+      overflow-y: auto !important;
+      overflow-x: hidden !important;
       height: auto !important;
-      position: relative !important;
     }
+    .hero { min-height: 100vh; position: relative; }
   </style>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SP4K3KFLDB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-SP4K3KFLDB');
+  </script>
 
   <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -38,9 +61,9 @@
 
 <body class="index-page">
 
-  <header id="header" class="header fixed-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
         <h1 class="sitename">Maison de bakes</h1>
       </a>
       <nav id="navmenu" class="navmenu">
@@ -52,20 +75,41 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-      <a class="btn-book-a-table" href="https://wa.me/6289677414850">ORDER VIA WA</a>
+      <a class="btn-book-a-table d-none d-xl-block" href="https://wa.me/6289677414850?text=Halo%20Maison%20de%20Bakes,%20saya%20ingin%20order%20roti">ORDER VIA WA</a>
     </div>
   </header>
 
   <main class="main">
-    <section id="hero" class="hero section dark-background" style="min-height: 100vh; display: flex; align-items: center;">
-      <img src="./assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+    <section id="hero" class="hero section dark-background">
+      <img src="./assets/img/hero-bg.jpg" alt="Hero Background" data-aos="fade-in">
       <div class="container text-center">
         <h2 data-aos="fade-up">Welcome to <span>Maison de bakes</span></h2>
         <p data-aos="fade-up" data-aos-delay="100">Freshly Baked, Just For You!</p>
+        <div class="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="200">
+          <a href="#menu" class="cta-btn">Check Our Menu</a>
+        </div>
       </div>
     </section>
 
-    </main>
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>About Us</h2>
+          <p>Kisah Maison de bakes</p>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-7 content">
+            <p>Menghadirkan kehangatan melalui setiap kreasi kami. Dimulai dari cinta terhadap seni pembuatan kue premium yang lembut dan wangi.</p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Bahan Premium & Fresh setiap hari.</li>
+              <li><i class="bi bi-check-circle"></i> Tanpa bahan pengawet buatan.</li>
+              <li><i class="bi bi-check-circle"></i> Resep autentik yang selalu terjaga.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./assets/vendor/aos/aos.js"></script>
