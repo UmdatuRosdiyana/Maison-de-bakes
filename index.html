@@ -11,6 +11,19 @@
   <meta name="author" content="Maison de Bakes">
   <meta name="robots" content="index, follow">
 
+  <style>
+    #preloader {
+      display: none !important;
+      visibility: hidden !important;
+      opacity: 0 !important;
+    }
+    body {
+      overflow: visible !important;
+      background-color: white !important;
+      color: #222 !important;
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -41,13 +54,13 @@
     gtag('config', 'G-SP4K3KFLDB');
   </script>
 
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="./assets/css/main.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -67,14 +80,14 @@
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
-        <a class="btn-book-a-table d-none d-xl-block" href="#book-a-table">Order Now</a>
+        <a class="btn-book-a-table d-none d-xl-block" href="https://wa.me/6289677414850">Order via WA</a>
       </div>
     </div>
   </header>
 
   <main class="main">
     <section id="hero" class="hero section dark-background">
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="./assets/img/hero-bg.jpg" alt="Bakery Hero" data-aos="fade-in">
       <div class="container text-center">
         <h2 data-aos="fade-up">Welcome to <span>Maison de bakes</span></h2>
         <p data-aos="fade-up" data-aos-delay="100">Freshly Baked, Just For You!</p>
@@ -83,13 +96,25 @@
         </div>
       </div>
     </section>
-    
-    </main>
 
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>Kisah Maison de bakes</h3>
+            <p class="fst-italic">Menghadirkan kehangatan melalui setiap kreasi kami. Dimulai dari cinta terhadap seni pembuatan kue.</p>
+            <p>Setiap rasa dihasilkan dengan ketelitian dan kasih, karena bagi kami, kue adalah pengalaman dan kenangan manis bagi Anda dan keluarga.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/aos/aos.js"></script>
+  <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+
 </body>
 </html>
