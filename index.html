@@ -2,22 +2,9 @@
 <html lang="id">
 
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SP4K3KFLDB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-SP4K3KFLDB');
-  </script>
-
-  <meta name="google-site-verification" content="3LHgbZIco_R-PL9ViKw8mdgqzmE-0bw3VxmXgfCEmvE" />
-  
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
-  <title>Maison de Bakes | Fresh Bakery & Pastry</title>
-  <meta name="description" content="Maison de Bakes menyediakan roti, cake roll, dan pastry premium yang dibuat segar setiap hari di Tangerang. Pesan sekarang melalui WhatsApp!">
+  <title>Maison de bakes</title>
 
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -37,16 +24,19 @@
   <style>
     #preloader { display: none !important; }
     
+    /* Perbaikan Hero Background */
     .hero {
       width: 100%;
       min-height: 100vh;
-      background: #f8f8f8;
+      background: url('assets/img/hero-bg.jpg') top center no-repeat;
+      background-size: cover;
       position: relative;
       padding: 120px 0 60px 0;
       display: flex;
       align-items: center;
     }
 
+    /* Card Order Bawah - Dibuat Jelas & Senada */
     .order-card-custom {
       background-color: #ffffff;
       border: 1px solid #eeeeee;
@@ -54,7 +44,21 @@
       border-radius: 20px;
       text-align: center;
       box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.05);
-      margin-top: 40px;
+    }
+    .order-card-custom h3 {
+      color: #37373f;
+      font-family: "Amatic SC", sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    .order-card-custom p {
+      color: #5f5f6a;
+      font-size: 18px;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
     
     .btn-red-order {
@@ -66,18 +70,18 @@
       display: inline-block;
       font-weight: 600;
       transition: 0.3s;
+      border: none;
     }
     .btn-red-order:hover {
       background: #e61b1b;
-      transform: scale(1.05);
       color: white;
+      transform: scale(1.05);
     }
 
-    .card-item img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 10px;
+    /* Highlight Menu Order di dalam Navigasi */
+    .navmenu .btn-nav-order {
+      color: #ce1212 !important;
+      font-weight: 700 !important;
     }
   </style>
 </head>
@@ -97,7 +101,7 @@
           <li><a href="#why-us">Best Seller</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="https://wa.me/6289677414850" target="_blank" style="color: #ce1212; font-weight: 700;">Order via WhatsApp</a></li>
+          <li><a href="https://wa.me/6289677414850" class="btn-nav-order">Order via WhatsApp</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -105,11 +109,99 @@
   </header>
 
   <main class="main">
+
     <section id="hero" class="hero section">
-      <div class="container text-center">
-        <h2 data-aos="fade-up">Welcome to Maison de bakes</h2>
-        <p data-aos="fade-up" data-aos-delay="100">Freshly Baked, Just For You!</p>
-        <img src="assets/img/hero-img.png" class="img-fluid animated" alt="" style="max-width: 400px;">
+      <div class="container">
+        <div class="row gy-4 justify-content-center justify-content-lg-between align-items-center">
+          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2 data-aos="fade-up">Welcome to Maison de bakes</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Freshly Baked, Just For You!</p>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+            <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/about.jpg" class="img-fluid about-img" alt="">
+          </div>
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>Kisah Kehangatan Maison de bakes</h3>
+            <p class="fst-italic">Menghadirkan kebahagiaan dalam setiap lapisan kue.</p>
+            <p>Dimulai dari cinta terhadap seni pembuatan kue, kami menyajikan kreasi terbaik untuk merayakan momen berharga Anda.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us" class="why-us section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Product</h2>
+        <p>Best Seller</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4 text-center">
+          <div class="col-lg-4">
+            <div class="card-item p-4 border rounded shadow-sm">
+              <img src="assets/img/cake2.jpeg" class="img-fluid mb-3" style="border-radius: 10px;">
+              <h4>Cake Roll</h4>
+              <p>Kue gulung lembut dengan krim manis.</p>
+              <a href="https://wa.me/6289677414850?text=Order%20Cake%20Roll" class="btn-red-order">Pesan via WA</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-item p-4 border rounded shadow-sm">
+              <img src="assets/img/p3.jpg" class="img-fluid mb-3" style="border-radius: 10px;">
+              <h4>Chocolate Muffin</h4>
+              <p>Muffin lembut dengan rasa cokelat pekat.</p>
+              <a href="https://wa.me/6289677414850?text=Order%20Chocolate%20Muffin" class="btn-red-order">Pesan via WA</a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card-item p-4 border rounded shadow-sm">
+              <img src="assets/img/p7.jpg" class="img-fluid mb-3" style="border-radius: 10px;">
+              <h4>Tiramisu Slice</h4>
+              <p>Potongan tiramisu lembut rasa kopi.</p>
+              <a href="https://wa.me/6289677414850?text=Order%20Tiramisu%20Slice" class="btn-red-order">Pesan via WA</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="menu section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Menu</h2>
+        <p>Daftar Menu Kami</p>
+      </div>
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/p1.jpg" class="menu-img img-fluid">
+            <div class="menu-content"><a>Croissant Mentega</a><span>Rp 15.000</span></div>
+            <div class="menu-ingredients">Croissant renyah aroma mentega.</div>
+          </div>
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/p2.jpeg" class="menu-img img-fluid">
+            <div class="menu-content"><a>Cheese Bun</a><span>Rp 20.000</span></div>
+            <div class="menu-ingredients">Roti lembut isi keju meleleh.</div>
+          </div>
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/p4.jpg" class="menu-img img-fluid">
+            <div class="menu-content"><a>Cinnamon Roll</a><span>Rp 15.000</span></div>
+            <div class="menu-ingredients">Roti gulung lembut kayu manis.</div>
+          </div>
+          <div class="col-lg-6 menu-item">
+            <img src="assets/img/menu/p6.jpg" class="menu-img img-fluid">
+            <div class="menu-content"><a>Red Velvet Slice</a><span>Rp 22.000</span></div>
+            <div class="menu-ingredients">Kue merah lembut krim keju.</div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -119,17 +211,20 @@
           <div class="col-lg-10">
             <div class="order-card-custom">
               <h3>Siap Menikmati Kelezatan?</h3>
-              <p>Klik tombol di bawah untuk langsung memesan melalui WhatsApp kami.</p>
-              <a href="https://wa.me/6289677414850" target="_blank" class="btn-red-order">ORDER VIA WHATSAPP SEKARANG</a>
+              <p>Klik tombol di bawah untuk langsung memesan melalui WhatsApp kami. Kami siap melayani Anda.</p>
+              <a href="https://wa.me/6289677414850" class="btn-red-order">ORDER VIA WHATSAPP SEKARANG</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
   </main>
 
-  <footer class="footer text-center py-4">
-    <p>© 2025 Maison de bakes _UR</p>
+  <footer id="footer" class="footer dark-background text-center py-4">
+    <div class="container">
+      <p>© <span>Maison </span> <strong class="px-1 sitename">de bakes</strong> <span>_UR</span></p>
+    </div>
   </footer>
 
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
